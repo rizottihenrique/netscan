@@ -1,4 +1,4 @@
-# 🛡️ NetScan: Network Security & Analytics Dashboard
+# 🛡️ NetScan: Network Analytics Dashboard
 
 NetScan é uma ferramenta de auditoria e monitoramento de infraestrutura desenvolvida para realizar varreduras de rede massivas e fornecer insights visuais em tempo real. O sistema utiliza o motor **Nmap** no backend para identificar hosts ativos, portas abertas e versões de serviços, apresentando os dados em um dashboard moderno e responsivo.
 
