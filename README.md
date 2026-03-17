@@ -31,10 +31,9 @@ NetScan é uma ferramenta de auditoria e monitoramento de infraestrutura desenvo
 - Docker e Docker Compose instalados na máquina host  
 
 ### Instruções de Instalação
-
+```bash
 1. Clone este repositório:
 
-```bash
 git clone https://github.com/seu-usuario/netscan.git
 cd netscan
 
