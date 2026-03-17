@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 
 services:
   network-dashboard:
@@ -7,7 +7,13 @@ services:
     ports:
       - "5000:5000"
     restart: unless-stopped
-    # Permissões necessárias para o Nmap realizar scans avançados (-sS, -sV, etc.)
+    
+    environment:
+      - FLASK_ENV=production
+      - PYTHONUNBUFFERED=1
+    
+    # Permissões necessárias para o Nmap realizar scans avançados (-sS, -sU, -sV)
+    # NET_RAW permite a manipulação de pacotes para o Stealth Scan
     cap_add:
       - NET_RAW
       - NET_ADMIN
