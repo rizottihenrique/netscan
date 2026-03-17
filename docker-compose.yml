@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  network-dashboard:
+    build: .
+    container_name: network-dashboard
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    # Permissões necessárias para o Nmap realizar scans avançados (-sS, -sV, etc.)
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
